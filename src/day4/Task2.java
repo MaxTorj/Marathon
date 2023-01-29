@@ -12,7 +12,6 @@ public class Task2 {
         int divZero = 0;
         int sum = 0;
 
-
         Random random = new Random();
 
         for (int number = 0; number < numbers.length; number++)
