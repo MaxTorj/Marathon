@@ -9,12 +9,12 @@ public class Car {
         this.inputYear = inputYear;
     }
 
-     void info() {
+     public void info() {
         System.out.println("Это автомобиль");
     }
 
-    int yearDifference (int releaseYear) {
+    public int yearDifference (int releaseYear) {
         this.releaseYear = releaseYear;
-        return inputYear - releaseYear;
+        return Math.abs(inputYear - releaseYear);
     }
 }

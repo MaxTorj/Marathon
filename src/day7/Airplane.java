@@ -56,9 +56,9 @@ public class Airplane {
     }
 
     public void info() {
-        System.out.println("Изготовитель: " + manufacturer + ", год выпуска: " + releaseYear + "г." +
-                           ", длина: " + length + " метров" + ", вес: " + weight + " тонн" +
-                           ", количество топлива в баке: " + fuelAmount + " литров");
+        System.out.println("Изготовитель: " + getManufacturer() + ", год выпуска: " + getReleaseYear() + "г." +
+                           ", длина: " + getLength() + " метров" + ", вес: " + getWeight() + " тонн" +
+                           ", количество топлива в баке: " + getFuelAmount() + " литров");
     }
 
     public void fillUp(int inputFuel) {

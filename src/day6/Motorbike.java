@@ -9,11 +9,11 @@ class Motorbike {
         this.inputYear = inputYear;
     }
 
-    void info () {
+    public void info () {
         System.out.println("Это мотоцикл");
     }
     public int yearDifference (int releaseYear) {
         this.releaseYear = releaseYear;
-        return inputYear - releaseYear;
+        return Math.abs(inputYear - releaseYear);
     }
 }

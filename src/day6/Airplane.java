@@ -2,58 +2,68 @@ package day6;
 
 public class Airplane {
     private String manufacturer;
-    public int releaseYear;
-    public int length;
-    public int weight;
-    public int fuelAmount = 0;
-    public int n;
+    private int releaseYear;
+    private int length;
+    private int weight;
+    private int fuelAmount;
 
     public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public int getReleaseYear() {
+        return releaseYear;
     }
 
     public void setReleaseYear(int releaseYear) {
         this.releaseYear = releaseYear;
     }
 
+    public int getLength() {
+        return length;
+    }
+
     public void setLength(int length) {
         this.length = length;
+    }
+
+    public int getWeight() {
+        return weight;
     }
 
     public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public void setFuelAmount(int fuelAmount) {
-        this.fuelAmount = fuelAmount;
-    }
-
     public int getFuelAmount() {
         return fuelAmount;
     }
 
-    public Airplane(String manufacturer, int releaseYear, int length, int weight, int fuelAmount) {
+    public void setFuelAmount(int fuelAmount) {
+        this.fuelAmount = fuelAmount;
+    }
+
+    public Airplane(String manufacturer, int releaseYear, int length, int weight) {
         this.manufacturer = manufacturer;
         this.releaseYear = releaseYear;
         this.length = length;
         this.weight = weight;
-        this.fuelAmount = fuelAmount;
+        this.fuelAmount = 0;
     }
 
-    void info() {
-        System.out.println("Изготовитель " + manufacturer + " год выпуска " + releaseYear + "г." +
-                           " длина " + length + " метров" + " вес " + weight + " тонн" +
-                           " количество топлива в баке " + fuelAmount + " литров");
+    public void info() {
+        System.out.println("Изготовитель: " + getManufacturer() + ", год выпуска: " + getReleaseYear() + "г." +
+                           ", длина: " + getLength() + " метров" + ", вес: " + getWeight() + " тонн" +
+                           ", количество топлива в баке: " + getFuelAmount() + " литров");
     }
 
-    public void setN (int n) {
-        this.n = n;
+    public void fillUp(int inputFuel) {
+        fuelAmount += inputFuel;
     }
 
-    public int getN() {
-        return n + fuelAmount;
-    }
-    void fillUp() {
-        System.out.println("Самолет дозаправлен на " + getN() + " литров");
-    }
+
 }
