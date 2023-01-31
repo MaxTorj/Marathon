@@ -7,6 +7,10 @@ public class Human {
         return name;
     }
 
+    public Human(String name) {
+        this.name = name;
+    }
+
     public void printInfo() {
         System.out.println("Этот человек с именем " + getName());
     }
