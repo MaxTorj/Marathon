@@ -1,8 +1,8 @@
 package day9;
 
 public class Circle extends Figure {
-    private int circleRadius;
-    public Circle(int circleRadius, String color) {
+    private double circleRadius;
+    public Circle(double circleRadius, String color) {
         super(color);
         this.circleRadius = circleRadius;
     }

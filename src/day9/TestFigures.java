@@ -17,9 +17,9 @@ public class TestFigures {
 
     public static double calculateRedPerimeter(Figure[] figures) {
         double perimeter = 0;
-        for (int i = 0; i < figures.length; i++) {
-            if ("Red".equals(figures[i].getColor())) {
-                perimeter += figures[i].perimeter();
+        for (Figure figure : figures) {
+            if ("Red".equals(figure.getColor())) {
+                perimeter += figure.perimeter();
             }
         }
         return perimeter;
@@ -27,9 +27,9 @@ public class TestFigures {
 
     public static double calculateReadArea(Figure[] figures) {
         double area = 0;
-        for (int i = 0; i < figures.length; i++) {
-            if ("Red".equals(figures[i].getColor())) {
-                area += figures[i].area();
+        for (Figure figure : figures) {
+            if ("Red".equals(figure.getColor())) {
+                area += figure.area();
             }
         }
         return area;

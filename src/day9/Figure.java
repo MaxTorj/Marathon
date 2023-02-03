@@ -9,6 +9,10 @@ public abstract class Figure {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public abstract double area();
     public abstract double perimeter();
 

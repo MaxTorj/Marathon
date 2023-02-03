@@ -1,11 +1,11 @@
 package day9;
 
 public class Triangle extends Figure {
-    private int sideA;
-    private int sideB;
-    private int sideC;
+    private double sideA;
+    private double sideB;
+    private double sideC;
 
-    public Triangle(int sideA, int sideB, int sideC, String color) {
+    public Triangle(double sideA, double sideB, double sideC, String color) {
         super(color);
         this.sideA = sideA;
         this.sideB = sideB;

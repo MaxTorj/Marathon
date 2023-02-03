@@ -1,9 +1,9 @@
 package day9;
 
 public class Rectangle extends Figure {
-    private int height;
-    private int width;
-    public Rectangle(int height, int width, String color) {
+    private double height;
+    private double width;
+    public Rectangle(double height, double width, String color) {
         super(color);
         this.height = height;
         this.width = width;
