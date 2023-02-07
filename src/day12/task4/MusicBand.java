@@ -47,12 +47,13 @@ public class MusicBand {
     }
 
     public static void artistTransfer(MusicBand a, MusicBand b) {
-        for (String artist : a.getArtistNames()) {
+        for (String artist : a.getArtistNames())
             b.getArtistNames().add(artist);
 
-            a.getArtistNames().clear();
-        }
+        a.getArtistNames().clear();
+
     }
+
 
     public void printArtistNames() {
         System.out.println(this.artistNames);
