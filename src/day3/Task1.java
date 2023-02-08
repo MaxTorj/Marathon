@@ -13,11 +13,32 @@ public class Task1 {
                 break;
 
             switch (city) {
-                case "Москва", "Владивосток", "Ростов" -> System.out.println("Россия");
-                case "Рим", "Милан", "Турин" -> System.out.println("Италия");
-                case "Ливерпуль", "Манчестер", "Лондон" -> System.out.println("Англия");
-                case "Берлин", "Мюнхен", "Кёльн" -> System.out.println("Германия");
-                default -> System.out.println("Неизвестная страна");
+                case "Москва":
+                case "Владивосток":
+                case "Ростов":
+                    System.out.println("Россия");
+                    break;
+
+                case "Рим":
+                case "Милан":
+                case "Турин":
+                    System.out.println("Италия");
+                    break;
+
+                case "Ливерпуль":
+                case "Манчестер":
+                case "Лондон":
+                    System.out.println("Англия");
+                    break;
+
+                case "Берлин":
+                case "Мюнхен":
+                case "Кёльн":
+                    System.out.println("Германия");
+                    break;
+
+                default:
+                    System.out.println("Неизвестная страна");
             }
         }
 

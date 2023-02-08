@@ -34,13 +34,32 @@ public class Player {
     public static void info() {
         if (countPlayers < 6) {
             switch (countPlayers) {
-                case 0 -> System.out.println("Команды не полные, еще есть шесть свободных мест");
-                case 1 -> System.out.println("Команды не полные, еще есть пять свободных мест");
-                case 2 -> System.out.println("Команды не полные, еще есть четыре свободных места");
-                case 3 -> System.out.println("Команды не полные, еще есть три свободных места");
-                case 4 -> System.out.println("Команды не полные, еще есть два свободных места");
-                case 5 -> System.out.println("Команды не полные, еще есть одно свободное место");
-                default -> System.out.println("Мест в командах больше нет");
+                case 0:
+                    System.out.println("Команды не полные, еще есть шесть свободных мест");
+                    break;
+
+                case 1:
+                    System.out.println("Команды не полные, еще есть пять свободных мест");
+                    break;
+
+                case 2:
+                    System.out.println("Команды не полные, еще есть четыре свободных места");
+                    break;
+
+                case 3:
+                    System.out.println("Команды не полные, еще есть три свободных места");
+                    break;
+
+                case 4:
+                    System.out.println("Команды не полные, еще есть два свободных места");
+                    break;
+
+                case 5:
+                    System.out.println("Команды не полные, еще есть одно свободное место");
+                    break;
+
+                default:
+                    System.out.println("Мест в командах больше нет");
             }
         }
     }
