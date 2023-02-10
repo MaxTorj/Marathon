@@ -26,8 +26,8 @@ public class User {
 
     public boolean isSubscribed(User user) {
         for (User thisUser : subscriptions) {
-            thisUser.getUsername().equals(user.getUsername());
-            return true;
+            if (thisUser.getUsername().equals(user.getUsername()))
+                return true;
         }
         return false;
     }
