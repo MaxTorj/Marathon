@@ -8,11 +8,10 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) throws FileNotFoundException {
-        File fileTest = new File("test.txt");
-        printResult(fileTest);
+        printResult();
     }
 
-    public static void printResult(File file) throws FileNotFoundException {
+    public static void printResult() throws FileNotFoundException {
         Random random = new Random();
 
         File file1 = new File("file1.txt");
