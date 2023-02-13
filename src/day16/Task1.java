@@ -17,7 +17,7 @@ public class Task1 {
                 String line = scanner.nextLine();
                 String[] numbers = line.split(" ");
 
-                double avg = 0;
+                double avg;
                 if (numbers.length < 2)
                     throw new IllegalArgumentException();
 
@@ -31,6 +31,9 @@ public class Task1 {
                 System.out.printf("среднее арифметическое чисел равно: " + "%.3f",avg);
 
             }
+
+            scanner.close();
+
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IllegalArgumentException i) {

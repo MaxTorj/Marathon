@@ -8,6 +8,11 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) throws FileNotFoundException {
+        File fileTest = new File("test.txt");
+        printResult(fileTest);
+    }
+
+    public static void printResult(File file) throws FileNotFoundException {
         Random random = new Random();
 
         File file1 = new File("file1.txt");
@@ -44,6 +49,6 @@ public class Task2 {
         while (scanner1.hasNextLine())
             result += Double.parseDouble(scanner1.nextLine());
 
-        System.out.println((int)result);
+        System.out.println((int) result);
     }
 }
