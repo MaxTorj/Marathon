@@ -17,7 +17,6 @@ public class Task1 {
                 String line = scanner.nextLine();
                 String[] numbers = line.split(" ");
 
-                double avg;
                 if (numbers.length < 2)
                     throw new IllegalArgumentException();
 
@@ -25,7 +24,7 @@ public class Task1 {
                 for (String number : numbers) {
                     sum += Integer.parseInt(number);
                 }
-                avg = sum / numbers.length;
+                double avg = sum / numbers.length;
 
                 System.out.println("среднее арифметическое чисел равно: " + avg);
                 System.out.printf("среднее арифметическое чисел равно: " + "%.3f",avg);
