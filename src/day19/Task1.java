@@ -15,7 +15,7 @@ public class Task1 {
                 scanner.useDelimiter("[.,:;()?!\"\\s–]+");
                 String line = scanner.nextLine();
 
-                for (String word : line.split("[.,:;()?!\"\\s–]+")) {
+                for (String word : line.split(" ")) {
                     if (map.get(word) == null) {
                         map.put(word, 1);
                     } else {
@@ -34,7 +34,7 @@ public class Task1 {
                 while (iterator.hasNext()) {
                     Map.Entry<String, Integer> entry = iterator.next();
                     if (mapMaxValue == entry.getValue()) {
-                        System.out.println(entry.getKey() + " : " + entry.getValue());
+                        System.out.println(entry.getKey() + ": " + entry.getValue());
                         iterator.remove();
                     }
                 }
